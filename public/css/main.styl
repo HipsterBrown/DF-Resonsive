@@ -1,0 +1,59 @@
+@import '_nib';
+@import '_variables.styl';
+
+::selection {
+  background: color-selection;
+  color: color-primary-font;
+}
+
+body{
+  font-family: font-body;
+  text-align: center;
+  padding: 2vh 5vw 0;
+  background: color-primary-bg;
+  color: color-primary-font;
+  margin: 0;
+}
+
+h1{
+  font-family: font-header;
+  font-size: 40vw;
+  letter-spacing: -.15em;
+  line-height: 1.2em;
+  margin: 0;
+
+  @media screen and (orientation: landscape) {
+    font-size: 60vh;
+  }
+}
+
+h3{
+  font-size: 3vw;
+  font-weight: normal;
+  padding-bottom: 25vh;
+
+  @media screen and (orientation: landscape) {
+    font-size: 3.5vh;
+    padding-bottom: 5vh;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+// DF SVG
+
+#df-svg {
+  width: 30vw;
+  height: 27.3vw;
+
+  @media screen and (orientation: landscape) {
+    width: 45vh;
+    height: 42.3vh;
+  }
+}
+
+#df-mid {
+  fill: color-primary-font;
+}
